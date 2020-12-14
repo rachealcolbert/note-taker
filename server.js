@@ -20,7 +20,7 @@ function findById(id, notesArray) {
 
 function createNewNote(body, notesArray) {
     const note = body;
-    notesArray.push(note);
+    notes.push(note);
     fs.writeFileSync(
         path.join(__dirname, './data/notes.json'),
         JSON.stringify({
