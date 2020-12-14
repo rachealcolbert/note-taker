@@ -46,8 +46,8 @@ app.get('/api/notes/:id', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString();
-    const notes = createNewNote(req.body, notes);
-    res.json(req.body);
+    const note = createNewNote(req.body, notes);
+    res.json(note);
 });
 
 app.listen(PORT, () => {
