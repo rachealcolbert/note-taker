@@ -12,9 +12,14 @@ function findById(id, notesArray) {
     return result;
 }
 
+app.get('/', (req, res) => {
+    let result = notes;
+    res.json(result);
+})
+
 app.get('/api/notes', (req, res) => {
-    let results = notes;
-    res.json(notes);
+    let result = notes;
+    res.json(result);
 })
 app.get('/api/notes/:id', (req, res) => {
     const result = findById(req.params.id, notes);
