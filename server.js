@@ -6,7 +6,7 @@ app.listen(3001, () => {
 
 const {
     notes
-} = require('./Data/notes.json');
+} = require('./db/db.json');
 
 app.get('/api/notes', (req, res) => {
     res.json(notes);
