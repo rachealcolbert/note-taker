@@ -9,5 +9,5 @@ const {
 } = require('./Data/notes.json');
 
 app.get('/api/notes', (req, res) => {
-    res.send('Hello!');
+    res.json(notes);
 });
