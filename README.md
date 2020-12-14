@@ -1,6 +1,6 @@
 # Note Taker App
 
-This is a web app that allows you to take notes, save those notes, and edit and add to them at a latter date.
+This is a web app that allows you to take notes, save those notes, and edit and add to them at a later date.
 
 **Link to GitHub Repo:** https://github.com/rachealcolbert/note-taker
 
