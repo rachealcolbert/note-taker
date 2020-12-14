@@ -46,15 +46,21 @@ app.get('/api/notes/:id', (req, res) => {
     res.json(result);
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
 app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString();
     const note = createNewNote(req.body, notes);
     res.json(note);
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
-})
+
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
