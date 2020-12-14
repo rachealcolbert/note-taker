@@ -12,6 +12,8 @@ app.use(express.urlencoded({
     extended: true
 }));
 app.use(express.json());
+app.use(express.static('public'));
+
 
 function findById(id, notesArray) {
     const result = notesArray.filter(notes => notes.id === id)[0];
