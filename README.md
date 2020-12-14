@@ -4,6 +4,8 @@ This is a web app that allows you to take notes, save those notes, and edit and 
 
 **Link to GitHub Repo:** https://github.com/rachealcolbert/note-taker
 
+**Link to Deployed App:** https://calm-badlands-93872.herokuapp.com/
+
 **Screenshot of Application:**
 
 ![Image of Application](assets/notetaker.png)
